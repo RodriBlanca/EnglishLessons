@@ -1,13 +1,14 @@
 import React from 'react';
 // Components
 import NavBar from '../NavBar/NavBar';
+import Brand from '../Brand/Brand';
 // CSS  
 import './sidebar.css';
 
 const Sidebar = () => {
   return(
       <aside className='aside'>
-          <h1 className='aside-title'>English Lessons</h1>
+          <Brand />
           <NavBar />
       </aside>
   );

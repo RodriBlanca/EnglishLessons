@@ -13,7 +13,7 @@ const TodoApp = () => {
     <div className='App'>
         <Sidebar />
         <Routes>
-            <Route path="/" element={<Home />}/>
+            <Route path="/EnglishLessons" element={<Home />}/>
         </Routes>
     </div>
   );

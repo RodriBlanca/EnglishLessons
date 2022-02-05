@@ -1,0 +1,47 @@
+@media screen and (min-width: 270px) {
+}
+
+@media screen and (min-width: 700px) {
+}
+
+@media screen and (min-width: 1024px) {
+  .nav > ul {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .nav ul > li {
+    font-size: 1.3rem;
+    list-style: none;
+    margin: 25px 0;
+    position: relative;
+  }
+
+  .level-link {
+    color: #ffffff;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .level-link::after {
+    background-color: #ffffff;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 0;
+    position: absolute;
+    top: calc(100% + 0.1rem);
+    transition: width 0.3s ease-in-out;
+    width: 0;
+  }
+
+  .level-link:hover::after {
+    width: calc(100%);
+  }
+
+  .level-title {
+    color: #680416;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+}

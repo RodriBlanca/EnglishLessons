@@ -1,0 +1,10 @@
+@media screen and (min-width: 1024px) {
+  .brand-title {
+    color: #ffffff;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.8rem;
+    font-style: italic;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+}

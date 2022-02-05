@@ -1,4 +1,8 @@
+/* GOOGLE FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Noto+Serif:ital@0;1&display=swap");
+
 html {
+  font-family: "Noto Serif", serif;
   margin: 0;
   min-height: 100vh;
   padding: 0;
@@ -10,10 +14,63 @@ body {
   min-height: 100vh;
 }
 
-.App {
-  display: grid;
-  grid-template-columns: 250px repeat(10, 1fr);
-  grid-template-rows: 100vh;
-  background-color: #f4f4f4;
-  height: 100vh;
+/* MOBILE */
+@media screen and (min-width: 270px) {
+  .App {
+    background-color: #f4f4f4;
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh;
+    height: 100vh;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 700px) {
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .App {
+    grid-template-columns: 250px repeat(10, 1fr);
+  }
+
+  /* Home */
+  .home {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2/12;
+    grid-row: 1/2;
+    justify-content: flex-start;
+    overflow: hidden;
+    margin: 0 200px;
+  }
+
+  .home > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home-title {
+    color: #dc052d;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2.3rem;
+    font-style: italic;
+  }
+
+  .home-image {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .home-image__pic {
+    width: 100%;
+  }
 }
