@@ -1,0 +1,12 @@
+.aside-title {
+  margin: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .aside {
+    background-color: #dc052d;
+    box-shadow: 1px 2px 8px 2px #888888;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+}
